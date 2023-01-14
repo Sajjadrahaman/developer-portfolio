@@ -77,6 +77,7 @@ nav li {
     margin-bottom: 30px;
 }
 
+
 /* main section */
 main {
     max-width: 1140px;
@@ -214,4 +215,74 @@ input{
 
 .contact a{
     text-decoration: none;
+}
+
+/* responsive-Styles here */
+
+@media only screen and (max-width:576px) {
+    .header {
+        background-image: none;
+    }
+    nav,
+    .banner,
+    .skill-container,
+    .resume-content,
+    .about-info-container,
+    .contact {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 20px;
+    }
+    .banner{
+        margin: 0 20px;
+    }
+    .banner img{
+        width: 100%;
+    }
+    nav ul{
+        flex-direction: column;
+        padding-left: 20px;
+        gap:20px;
+        align-items: flex-start;
+    }
+    nav li{
+        margin: 0;
+    }
+
+    .about {
+        padding: 20px;
+    }
+
+    .contact input[type="text"],
+    [type="email"],
+    textarea {
+        padding: 0 0 0 10px;
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width:992px) {
+    .about,
+    .contact {
+        padding: 20px;
+    }
+
+    .contact, .banner ,nav {
+        flex-direction: column;
+    }
+
+    nav ul{
+        flex-direction: column;
+        gap:20px;
+        padding-left: 10px;
+        align-items: flex-start;
+    }
+    nav li{
+        margin: 0;
+    }
+
+    .contact input[type="text"],
+    [type="email"],
+    textarea {
+        padding: 0 0 0 10px;
+    }
 }
